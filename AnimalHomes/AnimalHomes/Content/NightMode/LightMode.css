@@ -1,0 +1,19 @@
+﻿body {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-out;
+}
+#buttonMode {
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 2px;
+    margin: 13px;
+    
+}
+
+    #buttonMode:hover {
+        color: #9d9d9d;
+        background-color: #222222;        
+        transition: 1s;
+    }

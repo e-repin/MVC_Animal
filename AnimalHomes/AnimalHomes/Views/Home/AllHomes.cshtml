@@ -1,0 +1,30 @@
+﻿@*@model AnimalHomes.Models.GetAllHomesViewModel
+@{
+    ViewBag.Title = "All homes";
+}
+
+<h2>All homes</h2>
+
+
+@foreach (var item in Model.Homes)
+{
+    <p>Name: @item.Name</p>
+    <p>Id: @item.Id</p>
+}*@
+@section scripts{
+    <script src="@Url.Content("~/Scripts/NightMode/NightMode.js")"></script>
+}
+
+@section Button{
+    <button class="NightMode" id="buttonMode">Night mode</button>
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/Content/NightMode/LightMode.css" id="refButtonMode" />
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Homes</h2>
+@Html.Partial("Partial")

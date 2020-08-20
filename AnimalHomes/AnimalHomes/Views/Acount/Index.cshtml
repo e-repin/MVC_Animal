@@ -1,0 +1,15 @@
+﻿@{ 
+    ViewBag.Title = "Index";
+}
+    <div>
+        @using (Html.BeginForm("Register", "Acount", FormMethod.Post))
+        {
+            <span>UserName:</span>@Html.TextBox("UserName")
+            <span>Email:</span>@Html.TextBox("Email")
+            <span>Type:</span> @Html.TextBox("Type")
+    <       <span>Password:</span> @Html.Password("Password")
+            
+            <input type="submit"value="Set"/>
+        }
+
+    </div>
